@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--
+        Faça um programa que peça uma nota, entre zero e dez. Mostre uma mensagem caso o valor seja inválido e continue pedindo até que o usuário informe um valor válido. 
+
+        Faça um programa que leia um nome de usuário e a sua senha e não aceite a senha igual ao nome do usuário, mostrando uma mensagem de erro e voltando a pedir as informações. 
+
+       Faça um programa que peça um número e identifique se ele é par ou impar.
+    -->
+
+    <h2>Programa de nota 1</h2>
+    <div style="border: 2px solid blue; padding: 10px; width: 200px; margin-top: 20px;">
+        <label for="">Digite uma nota de 0 a 10: 
+            <input type="number" id="nota1">
+        </label>
+        <br><br>
+        <button onclick="validarNota()">Validar</button>
+        <div id="MostrarMensagem"></div>
+         
+    </div>
+
+   
+    <div style="border: 2px solid blue; padding: 10px; width: 200px; margin-top: 20px;">
+        <h2>Programa usuario e senha 2</h2>
+        <label for="">Digite seu nome de <strong>Usuário:</strong><br>
+            <input type="text" id="nome">
+        </label>
+        <br><br>
+        <label for="">Digite sua <strong>Senha:</strong><br>
+            <input type="text" id="senha">
+        </label><br><br>
+        <button onclick="autenticar()">Autenticar</button>
+        <div id="Autenticar"></div>
+    </div>
+
+    <div style="border: 2px solid blue; padding: 10px; width: 200px; margin-top: 20px;">
+        <h2>Programa que peça um número se é par ou impar</h2>
+        <label for="">Digite um número:</label><br>
+        <input type="number" id="numero">
+        <br><br>
+        <button onclick="validarNumero()">Validar</button>
+        <div id="MostrarNumero"></div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
